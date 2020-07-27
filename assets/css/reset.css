@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+div {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+
+ul,
+lo,
+li {
+  list-style: none;
+}
