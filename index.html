@@ -3,15 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>INCUEIGHT DESIGN</title>
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
       <div class="headerIn">
         <h1>
-          <a href="#"><img src="assets/img/logo.png" alt="" /></a>
+          <a href="index.html"><img src="assets/img/logo.png" alt="" /></a>
         </h1>
         <div class="btn_menu">
           <div></div>
@@ -21,6 +24,23 @@
       </div>
     </header>
     <main>
+      <div class="nav">
+        <a href="#" class="btn_close"></a>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li>
+            <a href="#">Serive</a>
+            <ul>
+              <li><a href="#">Branding</a></li>
+              <li><a href="#">Space Design</a></li>
+              <li><a href="#">Film&Photo</a></li>
+              <li><a href="#">Global Service</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Works</a></li>
+          <li><a href="#">Contaact</a></li>
+        </ul>
+      </div>
       <div class="main-con1">
         <video class="video" preload playsinline autoplay="1" muted loop poster>
           <source src="assets/video/main_video.mp4" type="video/mp4" />
@@ -28,7 +48,7 @@
         <div class="works">
           <div class="title">
             <div>
-              <a href="#">WORKS</a>
+              <a href="SubPage.html">WORKS</a>
             </div>
           </div>
           <!-- title END -->
@@ -86,7 +106,7 @@
             자세인쇄 제작까지 온, 오프라인 통합 브랜딩 다지안 솔루션을
             제공합니다.
           </p>
-          <a href="#">
+          <a href="SubPage.html">
             <span></span>
             go to portfolio
           </a>
@@ -134,11 +154,10 @@
             있도록<br />디자인하여 브랜드와 사람을 잇는 적극적인 소통의 장으로
             활용합니다.
           </p>
-          <a href="#"> go to portfolio<span></span> </a>
+          <a href="SubPage.html"> go to portfolio<span></span> </a>
         </div>
       </div>
       <!-- main-con3 END -->
-
       <div class="main-con4">
         <div class="con4-text">
           <h2>
@@ -181,7 +200,7 @@
             클라이언트와의 긴밀한 커뮤니케이션을 바탕으로 컨샘 선정, 시나리오
             기획, 촬영,<br />편집, 보정 업무 전 단꼐에 디테일을 추구합니다.
           </p>
-          <a href="#">
+          <a href="SubPage.html">
             <span></span>
             go to portfolio
           </a>
@@ -195,7 +214,7 @@
         <div class="main5-video">
           <video
             class="con5-video"
-            preload
+            preload/
             playsinline
             autoplay="1"
             muted
@@ -230,9 +249,41 @@
             다국어 컨텐츠 제작부터 전시회 참가, 해외 로케이션 촬영까지 글로벌
             커뮤니케이션을<br />포함한 통합 프로젇션 서비스를 제공합니다.
           </p>
-          <a href="#"> go to portfolio<span></span> </a>
+          <a href="SubPage.html"> go to portfolio<span></span> </a>
         </div>
       </div>
     </main>
+    <footer>
+        <div class="footerIn">
+          <div class="foot_info">
+            <div class="foot_infowrap">
+              <h2>OUR OFFICE</h2>
+              <address>
+                울산광역시 남구 삼산동 삼산중로100번길 26<br>
+                <span class="eng">
+                  26, Samsanjung-ro 100beon-gil, Nam-gu, Ulsan, Republic of Korea
+                </span>
+              </address>
+              <dl>
+                <dt>TEL</dt>
+                <dt>+82-07-2134-1234</dt>
+              </dl>
+            </div>
+            <div class="foot_contact">
+              <ul>
+                <li><a href="#"><span><img src="assets/img/foot_ico2.png"></span>Instagram</a></li>
+                <li><a href="#"><span><img src="assets/img/foot_ico2.png"></span>회사소개서</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="foot_logo">
+            <img src="assets/img/foot_logo.png" alt="">
+          </div>
+          <div class="ft-copy">
+            © 2020 INCU8 - ALL RIGHTS RESERVED.
+          </div>
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

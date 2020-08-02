@@ -1,5 +1,7 @@
 @charset "utrf-8";
-
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
 div.headerIn {
   width: 100%;
   position: fixed;
@@ -568,4 +570,179 @@ div.con5-ft span {
   background: #0000ff url("../img/go_arr1.png") no-repeat center;
   border-radius: 50%;
   margin-left: 20px;
+}
+
+/* 네비게이션 설정 */
+.nav {
+  width: 370px;
+  height: 100%;
+  padding: 69px 48px;
+  background: rgba(0, 0, 0, 0.9);
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1100;
+  transform: translateX(-100%);
+  transition: all 0.2s ease-out;
+}
+.nav .btn_close {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  transform: rotate(45deg);
+}
+.nav .btn_close:before {
+  display: block;
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+.nav .btn_close:after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav > ul {
+  margin-top: 55px;
+}
+.nav > ul > li:hover a {
+  color: #b4c80e;
+}
+.nav > ul > li > a {
+  display: block;
+  font-size: 40px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.9);
+  transition: all 0.4s;
+}
+.nav > ul > li > ul {
+  margin: 15px 0 35px;
+}
+.nav > ul > li > ul > li {
+  margin-bottom: 10px;
+}
+.nav > ul > li > ul > li > a {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.act {
+  transform: translateX(0);
+}
+
+/* footer 설정 */
+footer {
+  background: #d4d1d5;
+}
+
+.footerIn {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+@media (max-width: 1560px) {
+  .footerIn {
+    max-width: 1000px;
+  }
+}
+.footerIn .foot_info {
+  padding: 45px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #b4b2b5;
+}
+.foot_info .foot_infowrap {
+  width: calc(100% - 400px);
+}
+.foot_info .foot_infowrap h2 {
+  color: #000;
+  font-size: 16px;
+}
+.foot_info .foot_infowrap address {
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 170%;
+  font-style: normal;
+}
+.foot_info .foot_infowrap address .eng {
+  color: #777;
+}
+.foot_info .foot_infowrap dl {
+  display: flex;
+}
+.foot_info .foot_infowrap dl dt {
+  font-size: 15px;
+  color: #222;
+  margin-right: 3px;
+}
+.foot_info .foot_contact {
+  width: 368px;
+  height: 38px;
+  line-height: 38px;
+  margin-top: 50px;
+}
+.foot_info .foot_contact ul {
+  display: flex;
+  height: 38px;
+  line-height: 38px;
+}
+.foot_info .foot_contact ul li {
+  margin-left: 20px;
+  text-align: center;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+}
+.foot_info .foot_contact ul li:first-child {
+  margin: 0;
+}
+.foot_info .foot_contact ul li a {
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 38px;
+  height: 38px;
+}
+.foot_info .foot_contact ul li a span {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  margin-right: 10px;
+  background: #949295;
+  border-radius: 50%;
+}
+.foot_info .foot_contact ul li a span img {
+  width: 100%;
+}
+.footerIn .foot_logo {
+  width: 100%;
+  padding: 24px 0 57px;
+}
+.footerIn .ft-copy {
+  position: absolute;
+  right: 0;
+  bottom: 94px;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.headerBg {
+  background: rgba(0, 0, 0, 0.9);
+  transition: all 0.8s;
 }
